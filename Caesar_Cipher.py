@@ -5,7 +5,6 @@ letter_array = []
 for i in letters:
     letter_array.append(i)
 
-# inputs
 left_shift = int(input())
 word = input('').lower()
 
@@ -23,7 +22,6 @@ for i in word:
     if i in letters: 
         num_of_word = letter_array.index(i) - left_shift
         main_letter = letter_array[num_of_word]
-        # rearrange.append(main_letter)
         rearrange = rearrange + main_letter
     else:
         rearrange = rearrange + ' '
